@@ -1,0 +1,23 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Backbone View Validation</title>
+    </head>
+    <body>
+        <form action="http://www.google.com/" method="post" id="js-form">
+            <p>Name: <input name="fullname" class="js-mandatory-field" data-message="Please ensure you enter your full name"></p>
+            <p>Date of Birth: <input name="dob" placeholder="dd/mm/yyyy" class="js-mandatory-field" data-message="Please ensure you enter a valid date format"></p>
+            <p>Age: <input name="age" type="number" class="js-mandatory-field" data-message="Please ensure you enter a valid age"></p>
+            <p>Email: <input name="email" type="email" class="js-mandatory-field" data-message="Please ensure you enter a valid email"></p>
+            <p>Mobile: <input name="mobile" class="js-mandatory-field" data-message="Please ensure you enter a valid mobile number"></p>
+            <p>Password (8 alpha-numerical characters, at least either 1 number or 1 text character): <input name="password" type="password" class="js-mandatory-field" data-message="Please ensure you enter a password that matches the criteria"></p>
+            <p>Credit Card: <input name="card" class="js-mandatory-field" data-message="Please ensure you enter a valid credit card number"></p>
+            <p>To proceed please tick this box: <input name="proceed" type="checkbox" class="js-mandatory-field" data-message="Please ensure you tick the box to proceed"></p>
+            <p><input type="submit" value="Submit Form"></p>
+        </form>
+        <script src="Assets/Scripts/curl.js"></script>
+        <script src="Assets/Scripts/app.js"></script>
+    </body>
+</html>

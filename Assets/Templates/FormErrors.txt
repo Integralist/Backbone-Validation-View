@@ -1,0 +1,9 @@
+<div class="form-errors" id="js-formerrors">
+	<p>Sorry, there were some issues with your submission</p>
+	<p>Please check the following fields for any invalid information&hellip;</p>
+	<ul>
+		{{#errors}}
+			<li>{{error}}</li>
+		{{/errors}}
+	</ul>
+</div>
